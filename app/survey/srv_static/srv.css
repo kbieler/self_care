@@ -1,0 +1,46 @@
+body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #b5fffc;
+    background: linear-gradient(180deg, rgb(151, 228, 246) 10%, #f5edff 90%);
+    font-family: 'Alegreya', serif;
+}
+
+#srvtitle{
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+}
+
+#chill{
+    max-height: 60vh;
+    width: auto;
+    border: solid 3px navy;
+    margin: 15px;
+}
+
+#sccform{
+    background-color: #b5fffc;
+    background-image: url("../srv_static/images/water&sky.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    border: solid 3px navy;
+    margin: 15px;
+    font-size: large;
+}
+
+btn{
+    background-color: #f5edff;
+}
+
+nav{
+    font-family: Lato;
+    box-shadow: 3px 3px 3px rgb(13, 119, 161);
+    background-color: rgba(122,221,244,1);
+    background: linear-gradient(180deg, rgba(122,221,244,1) 10%, #ffdee9 90%);
+}
+
+a:hover{
+    color:#b4657f;
+}

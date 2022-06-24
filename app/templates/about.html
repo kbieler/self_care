@@ -1,0 +1,57 @@
+{% extends 'components/layout.html' %}
+
+{% block content %}
+<div class="container" id="infog">
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div style="position: relative; width: 100%; height: 0; padding-top: 80.0000%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFEZye2324&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center" id="scfacts">
+    <h5><strong>The following self-care practices have been well-researched and linked to a longer life:</strong><br></h5>
+      <br>
+      <br>
+      <h6><strong>Exercise: </strong> People who exercised between two and eight hours per week throughout their lives reduced their risk of dying by 29 to 36 percent, according to a March 2019 study published in JAMA Network Open.<br>
+      <br>
+      <strong>Diet: </strong> Eating a diet filled with five servings of fruits and vegetables per day was associated with a lower risk of mortality, especially from heart-related issues, according to a July 2014 study published in The BMJ.<br>
+      <br>
+      <strong>Sleep: </strong> A study published in September 2017 in the Journal of the American Heart Association found too-little sleep (less than seven hours per night) was linked with higher mortality rates, though too-much sleep wasn't healthy either.<br>
+      <br>
+      <strong>Getting Outside: </strong> According to a 2019 study published in Lancet Planet Health, spending time in green space is associated with a lower mortality rate.<br>
+    </h6>
+  </div>
+</div>
+
+<div class="container" id="park">
+  <div class="row justify-content-center">
+      <form class="p-3" method="POST">
+          {{ form.hidden_tag() }}
+          <div class="form-group">
+              <h3>Need to find some green space?<br>
+                   Search nearby parks:</h3>
+              <fieldset id="username-field">
+                  {{ form.location.label }}
+                  {{ form.location(class='form-control', placeholder='City, State...') }}
+              </fieldset>     
+          </div>
+          {{ form.submit(class='btn btn-block btn-info') }}
+      </form>
+  </div>
+
+  <div class="row justify-content-center">
+      <h5>Submit your search, then click <a href="{{ parks }}" target="_blank">HERE</a> for your park result!</h5>
+  </div>
+</div>
+
+{% endblock content %}
+

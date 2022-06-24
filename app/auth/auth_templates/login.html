@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container" id="signin">
+<form class="p-3" method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <h3>Sign In:</h3>
+        <fieldset id="username-field">
+            {{ form.username.label }}
+            {{ form.username(class='form-control', placeholder='Username...') }}
+        </fieldset>     
+    </div>
+    <div class="form-group">
+        <fieldset id="password-field">
+            {{ form.password.label }}
+            {{ form.password(class='form-control', placeholder='Password...') }}
+        </fieldset>
+    </div>
+    {{ form.submit(class='btn btn-block btn-info') }}
+</form>
+</div>
+
+
+<div class="container"> 
+    <div class="row justify-content-center">
+    <img src="../../static/images/meditate.jpg" id="med">
+    </div>
+    <br>
+    <div class="row justify-content-center" id="return">
+        <h5> <a href="{{ url_for('home')}}">Return to Home Page</a></h5>
+     </div>
+</div>
+
+{% endblock content %}

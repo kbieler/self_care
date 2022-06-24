@@ -1,0 +1,20 @@
+body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #6047e0 0%, #e5cdc3 100%);
+}
+
+#signin{
+    margin: 30px;
+}
+
+#med{
+    max-height: 50vh;
+    width: auto;
+    margin-top: 15px;
+}
+
+#return{
+    margin-bottom: 25px;
+}
